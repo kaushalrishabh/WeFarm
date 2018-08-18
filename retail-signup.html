@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+   
+</head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#" style="font-size: 24px; font-weight: 800; color: green">WeFarm</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sell</a>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="#" lang="hi" hreflang="hi"> Hindi </a>
+      </li>
+    </ul>
+	  </div>
+	</nav>
+	
+	<div class="container" style="width: auto">
+		<div class="jumbotron">
+			<h3 style="text-align: center"> <span style="color: chocolate">Retailer</span> SignUp</h3>
+		</div>
+		<div class="form-group">
+			<form method="post" id="create-account" action="retailerHome.html">
+			  <div class="form-group">
+				<label class="form-control-label"> Name </label>
+				 <input type="text" id="name" class="form-control-plaintext" style="border-radius: 0px; border: solid 1px #000000" required>
+			</div>
+			  <div class="form-group">
+				<label class="form-control-label"> Phone Number </label>
+				 <input type="tel" id="phone" class="form-control-plaintext" style="border-radius: 0px; border: solid 1px #000000" required>
+			</div>
+		    <div class="form-group">
+				<label class="form-control-label"> Password </label>
+				 <input type="password" id="pass" class="form-control-plaintext" style="border-radius: 0px; border: solid 1px #000000" required>
+			</div>
+			
+			  <div class="form-group">
+				<label class="form-control-label" for="state"> State </label>
+				<div class="form-group">
+ 					  <select class="form-control" id="state">
+					    <option value="MP">Madhya Pradesh</option>
+					    <option value="RJ">Rajasthan</option>
+					    <option value="UP">Uttar Pradesh</option>
+					    <option value="PB">Punjab</option>
+					    <option value="HR">Haryana</option>
+  					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="form-control-label" for="city"> Choose Nearest Mandi</label>
+				<div class="form-group">
+ 					  <select class="form-control" id="state">
+					    <option value="bpl">Bhopal</option>
+					    <option value="ind">Indore</option>
+					    <option value="khn">Khanna</option>
+					    <option value="PB">Ajmer</option>
+					    <option value="HR">Haryana</option>
+  					</select>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 btn btn-primary">
+				<button class="btn btn-primary" type="submit">
+					Sign Up
+				</button>
+			</div>
+			<div class="col-12 col-sm-12" style="margin-top: 20px;">
+				<span style="text-align: right"> Already member, <a href="farmer-login.html">Log In?</a></span>
+			</div>
+			</form>
+		</div>
+	</div>
+  	<!-- Footer Starts-->
+    <footer>
+        <div class="container-fluid" style="background-color: #2B303D; margin-top: 30px; padding:15px;color: rgba(231, 241, 239, 0.7);height: 55px;">
+            <span class="l-Float"> WeFarm Corp.	&copy; 2018 </span>
+            
+        </div>
+    </footer>
+    <!-- Footer Ends-->
+  </body>
+</html>
