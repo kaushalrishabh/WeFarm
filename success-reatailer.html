@@ -11,7 +11,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-   
+   <style>
+   body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+.container {
+   min-height:100%;
+   position:relative;
+}
+	 footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+  
+}
+	  </style>
 </head>
   <body>
   <!--Navbar Starts-->
@@ -36,40 +53,33 @@
 	  </div>
 	</nav>
 <!-- Navbar Ends-->
-	
-	<div class="container" style="width: auto; margin-top: 60px">
-		<div class="jumbotron">
-			<h3 style="text-align: center"> <span style="color: chocolate">Retailer</span> Login</h3>
-		</div>
-		<div class="form-group">
-			<form method="post" id="create-account" action="farmerHome.html">
-			  <div class="form-group">
-				<label class="form-control-label"> Username </label>
-			    <input type="text" id="username" class="form-control-plaintext" style="border-radius: 0px; border: solid 1px #000000" required>
+<div class="container" style="height: auto">
+	<div class="col-12 col-sm-12">
+		<h2 style="text-align: center; margin-top: 60px; color: deepskyblue"> Congratulations</h2>
+		
+		<div class="col-12 col-sm-12" style="margin-top: 30px">
+
+			<h5 style="text-align: center"> You have been Registered Succesfully.</h5>	
+			<p style="text-align: center; margin-top: 60px">
+				Kindly Click the Login button to Proceed.
+			</p>
+			<div class="col-12 col-sm-12 ">
+			<a href="">		
+				<button class="btn btn-success" style="width: 100%">
+					Login
+				</button></a>
 			</div>
-			  <div class="form-group" style="margin-top: 30px">
-				<label class="form-control-label"> Password </label>
-				 <input type="password" id="pass" class="form-control-plaintext" style="border-radius: 0px; border: solid 1px #000000" required>
-			</div>
-			 
-			<div class="col-12 col-sm-12 btn btn-primary" style="margin-top: 60px">
-				<button class="btn btn-primary" type="submit">
-					Log-In
-			  </button>
-			</div>
-			<div class="col-12 col-sm-12" style="margin-top: 20px;">
-				<span style="text-align: right"> Not a member, <a href="retail-signup.html">SignUp?</a></span>
-			</div>
-			</form>
 		</div>
 	</div>
-  	<!-- Footer Starts-->
-    <footer>
+	
+	
+</div>
+
+	<!-- Footer Starts-->
+    <footer> 
         <div class="container-fluid" style="background-color: #2B303D; margin-top: 30px; padding:15px;color: rgba(231, 241, 239, 0.7);height: 55px;">
             <span class="l-Float"> WeFarm Corp.	&copy; 2018 </span>
             
         </div>
-    </footer>
+  </footer>
     <!-- Footer Ends-->
-  </body>
-</html>
